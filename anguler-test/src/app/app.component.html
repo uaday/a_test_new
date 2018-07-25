@@ -1,0 +1,6 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+
+<app-header (fSelect)= "track($event)"></app-header>
+<app-registration *ngIf="status==='registration'"></app-registration>
+<app-login *ngIf="status!=='registration'"></app-login>
